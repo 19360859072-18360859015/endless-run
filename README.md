@@ -8,7 +8,7 @@ Oyunumuzun bir ana menüsü bulunmakta ve burdan start tuşuna basarak oyuna ba�
 
 
 ![1](https://user-images.githubusercontent.com/56169407/150675900-5d655152-b057-459f-b1d7-7b84c9567437.png)
-![2](https://user-images.githubusercontent.com/56169407/150675901-14b3099b-bd50-41c7-9d10-93771c936f95.png)
 ![3](https://user-images.githubusercontent.com/56169407/150675902-c963feec-8ea6-4436-9fb1-3000f7911c01.png)
+![2](https://user-images.githubusercontent.com/56169407/150675937-76bde786-55a6-4d83-b123-7f7c860b3b8f.png)
 ![4](https://user-images.githubusercontent.com/56169407/150675909-4e8fa7da-4f60-403f-acec-b0f23c1bdf59.png)
 ![5](https://user-images.githubusercontent.com/56169407/150675913-4264e22d-730a-42f9-82bb-96eacbdc3900.png)
