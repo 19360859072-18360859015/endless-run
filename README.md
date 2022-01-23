@@ -1,4 +1,4 @@
-# endless-run
+# Endless Run
 
 ## Oyun Linki
 https://simmer.io/@SoicHer/endless-run
