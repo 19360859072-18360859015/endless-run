@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Player_sc : MonoBehaviour
 {
+    Manager_sc score;
+
     float horizontalInput;
     [SerializeField] float horizontalMultiplier = 2;
     public float speed = 5;
@@ -43,7 +45,9 @@ public class Player_sc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        speed = PlayerPrefs.GetFloat("speed");
+        string scoreObject = "Manager";
+        score = GameObject.Find(scoreObject).GetComponent<Manager_sc>();
     }
 
     // Update is called once per frame
@@ -51,10 +55,7 @@ public class Player_sc : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal"); //left, right, a, d
 
-        if (speed < maxSpeed)
-        { 
-            speed += 0.2f * Time.deltaTime; //hiz artisi
-        }
+        IncreaseSpeed();
 
         if(transform.position.y < -5)
         {
@@ -66,12 +67,25 @@ public class Player_sc : MonoBehaviour
     {
         alive = false;
         GameOverPanel.SetActive(true);
-        //Invoke("Restart", 2); //2sn gecikme
+        speed = 5;
+        score.score = 0;
+
     }
 
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //restart
+        SceneManager.LoadScene(1); //restart
+        speed = 5;
+        score.score = 0;
     }
     
+    void IncreaseSpeed()
+    {
+        if (speed < maxSpeed)
+        {
+            speed += 0.5f * Time.deltaTime; //hiz artisi
+        }
+
+        PlayerPrefs.SetFloat("speed", speed);
+    }
 }
