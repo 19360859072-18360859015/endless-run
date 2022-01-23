@@ -16,8 +16,8 @@ Oyunumuzun bir ana menüsü bulunmakta ve burdan yeni oyun için new game tuşun
 - Ana Menü ve Sahne Müzikleri
 
 ## Kaynaklar
-https://docs.unity3d.com/Manual/index.html
-https://freesound.org
+- https://docs.unity3d.com/Manual/index.html
+- https://freesound.org
 
 ## Oyun Görüntüleri
 ![1](https://user-images.githubusercontent.com/56169407/150675900-5d655152-b057-459f-b1d7-7b84c9567437.png)
